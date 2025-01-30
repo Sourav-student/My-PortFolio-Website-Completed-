@@ -1,0 +1,142 @@
+:root{
+    --opacity:0;
+}
+.tx-size {
+    font-size: 30px;
+}
+
+.tx-size2 {
+    font-size: 30px;
+}
+
+.height-20 {
+    height: 60px;
+}
+
+.animinate-bounce2 {
+    animation: bouncebyme 1s Linear 0s infinite alternate;
+}
+
+body{
+   transition: all 1s linear;
+}
+
+@keyframes bouncebyme {
+    0% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.text-25 {
+    font-size: 25px;
+    transition: all linear 0.5s;
+}
+
+.transition-all3 {
+    transition: all linear 3s;
+}
+
+@media (max-width:600px) {
+    .tx-size {
+        font-size: 20px;
+    }
+
+    .tx-size2 {
+        font-size: 30px;
+    }
+
+    .height-20 {
+        height: 60px;
+        margin-top: 6px;
+    }
+
+
+    .skillsAnimation {
+       opacity: var(--opacity);
+       position: relative;
+       top: 100px;
+    }
+
+    @keyframes skillsAnimation {
+        0%{
+            transform: translateX(-100%);
+            --opacity:0;
+            top: 100px;
+        }
+        25%{
+            transform: translateX(-75%);
+            --opacity:0.25;
+            top: 75px;
+        }
+        
+        50%{
+            transform: translateX(-50%);
+            --opacity: 0.5;
+            top: 50px;
+        }
+        75%{
+            transform: translateX(-25%);
+            --opacity:0.75;
+            top: 25px;
+        }
+        100%{
+            transform: translateX(0%);
+            --opacity: 1;
+            top: 0px;
+        }
+    }
+
+    .text-25 {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width:420px) {
+    .tx-size2 {
+        font-size: 30px;
+    }
+
+    .height-20 {
+        height: 40px;
+        margin-top: 13px;
+    }
+}
+
+.bg-gradiante {
+    background-image: repeating-linear-gradient(125deg, rgb(22, 114, 190), rgba(22, 114, 190, 0.845), rgba(22, 114, 190, 0.549), rgba(22, 190, 36, 0.442), rgb(0, 200, 255));
+}
+
+.bg-gradiante4 {
+    background-image: linear-gradient(to right, rgb(255, 0, 0), orange, yellow, rgb(0, 255, 0), rgb(217, 255, 0), rgb(255, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-gradiante5 {
+    background-image: linear-gradient(to right, rgb(0, 166, 255), rgb(0, 251, 255), rgb(195, 255, 0), rgb(255, 174, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.shadow-skills {
+    box-shadow: 5px 5px 15px rgba(133, 135, 136, 0.667);
+}
+
+.transition-allbyme {
+    transition: all 5s linear;
+}
+
+.display-none {
+    display: none;
+}
+
+.bg-gradiante7 {
+    background-image: linear-gradient(to right, rgb(0, 255, 0), #191f0c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

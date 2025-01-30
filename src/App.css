@@ -1,0 +1,7 @@
+.bg-red{
+    background-color: rgb(255, 255, 255);
+}
+
+.transition-allbyme{
+    transition: all 2s linear;
+}
